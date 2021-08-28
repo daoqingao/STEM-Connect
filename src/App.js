@@ -129,6 +129,9 @@ export default function App() {
         <Route path="/about">
           <AboutUsPage/>
         </Route>
+        <Route path="/home">
+          <HomePage />
+        </Route>
         <Route path="/">
           <HomePage />
         </Route>
