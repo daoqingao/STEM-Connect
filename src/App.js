@@ -34,13 +34,13 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 
 // import Features from "components/features/ThreeColSimple.js";
 // import Features from "components/features/ThreeColWithSideImage.js";
-// import Features from "components/features/ThreeColWithSideImageWithPrimaryBackground.js";
+// import Features from "components/features/HomePageValues.js";
 // import Features from "components/features/VerticalWithAlternateImageAndText.js";
 // import Features from "components/features/DashedBorderSixFeatures";
-// import MainFeature from "components/features/TwoColWithButton.js";
+// import MainFeature from "components/features/WhoWeAre.js";
 // import MainFeature from "components/features/TwoColSingleFeatureWithStats.js";
 // import MainFeature2 from "components/features/TwoColSingleFeatureWithStats2.js";
-// import MainFeature from "components/features/TwoColWithTwoHorizontalFeaturesAndButton.js";
+// import MainFeature from "components/features/AboutPagePart1.js";
 // import FeatureWithSteps from "components/features/TwoColWithSteps.js";
 // import FeatureStats from "components/features/ThreeColCenteredStatsPrimaryBackground.js";
 
@@ -64,7 +64,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 // import Testimonial from "components/testimonials/ThreeColumnWithProfileImage.js";
 // import Testimonial from "components/testimonials/SimplePrimaryBackground.js";
 
-// import FAQ from "components/faqs/SimpleWithSideImage.js";
+// import FAQ from "components/faqs/Questions.js";
 // import FAQ from "components/faqs/SingleCol.js";
 // import FAQ from "components/faqs/TwoColumnPrimaryBackground.js";
 
@@ -95,7 +95,7 @@ import HomePage from "demos/HomePage.js";
 // import LoginPage from "pages/Login.js";
 // import SignupPage from "pages/Signup.js";
 // import PricingPage from "pages/Pricing.js";
-// import AboutUsPage from "pages/AboutUs.js";
+import AboutUsPage from "pages/AboutUs.js";
 // import ContactUsPage from "pages/ContactUs.js";
 // import BlogIndexPage from "pages/BlogIndex.js";
 // import TermsOfServicePage from "pages/TermsOfService.js";
@@ -106,6 +106,7 @@ import MainLandingPage from "MainLandingPage.js";
 import ThankYouPage from "ThankYouPage.js";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import AboutUs from "./pages/AboutUs";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -121,8 +122,8 @@ export default function App() {
         <Route path="/components/:type/:name">
           <ComponentRenderer />
         </Route>
-        <Route path="/thank-you">
-          <ThankYouPage />
+        <Route path="/about">
+          <AboutUsPage/>
         </Route>
         <Route path="/">
           <HomePage />

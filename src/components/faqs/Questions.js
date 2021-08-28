@@ -40,8 +40,8 @@ const Answer = motion(tw.dd`pointer-events-none text-sm sm:text-base leading-rel
 export default ({
   subheading = "",
   heading = "Questions",
-  description = "Here are some frequently asked questions about our hotels from our loving customers. Should you have any other questions, feel free to reach out via the contact form below.",
-  imageSrc = "https://images.unsplash.com/photo-1579427421635-a0015b804b2e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80",
+  description = "Here are some frequently asked questions about STEM Connect. If you have any other questions, feel free to contact us with the information from our contact page.",
+  imageSrc = "https://images.unsplash.com/photo-1531379410502-63bfe8cdaf6f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
   imageContain = false,
   imageShadow = true,
   faqs = null
@@ -52,24 +52,32 @@ export default ({
    */
   const defaultFaqs = [
     {
-      question: "Is lunch provided free of cost ?",
+      question: "How does it work for educators ?",
       answer:
-        "Yes, it is, if you have a membership with us. Otherwise it is charged as per the menu. Some limits do apply as to how much items can be included in your lunch. This limit is enough for any one person and merely exists to discourage abusal of the system."
+        "If you are an educator, STEM Connect is the place for you to post your amazing services and programs to students. " +
+          "After creating an account and signing in, you can start making posts for your programs. Fill out all the necessary information such " +
+          "as title, cost, description, and etc. and you have just made a post for students to see. Now just sit back and prepare for students to" +
+          " register!"
     },
     {
-      question: "Do you have 2 Bedroom suites ?",
+      question: "How does it work for students ?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "If you are a student, you now have access to a variety of resources in the STEM field. Navigate over to the programs page, " +
+          "and then you can see all the programs available to you. Click on the ones you would like to register for and follow the steps " +
+          "on the page. You are now ready to get learning!"
     },
     {
-      question: "Are Wi-Fi costs included in the price ?",
+      question: "What is the inspiration behind STEM Connect ?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "As former teaching assistants and computer science instructors, we've noticed that a lot of individual tutors and small businesses " +
+          "in education aren't getting the amount of outreach that they should be getting. Some amazing programs are simply not heard of and " +
+          "many students are missing out on the opportunity to learn. We wanted to create a platform to help promote these small programs which " +
+          "will in turn help add more to the STEM field and help support small businesses in education."
     },
     {
-      question: "Where can I reach you for support ?",
+      question: "Waffle Hacks ?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "STEM Connect was built as a project for the Waffle Hacks Hackathon. You can find more at: https://wafflehacks.tech/"
     }
   ];
 

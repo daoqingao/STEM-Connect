@@ -50,11 +50,11 @@ import ThreePlansWithHalfPrimaryBackgroundPricing from "components/pricing/Three
 import ThreePlansPricing from "components/pricing/ThreePlans.js";
 
 import ThreeColWithSideImageFeatures from "components/features/ThreeColWithSideImage.js";
-import TwoColWithButtonFeatures from "components/features/TwoColWithButton.js";
+import TwoColWithButtonFeatures from "components/features/WhoWeAre.js";
 import ThreeColSimpleFeatures from "components/features/ThreeColSimple.js";
-import ThreeColWithSideImageWithPrimaryBackgroundFeatures from "components/features/ThreeColWithSideImageWithPrimaryBackground.js";
+import ThreeColWithSideImageWithPrimaryBackgroundFeatures from "components/features/HomePageValues.js";
 import TwoColVerticalWithButtonFeatures from "components/features/TwoColWithTwoFeaturesAndButtons.js";
-import TwoColHorizontalWithButtonFeatures from "components/features/TwoColWithTwoHorizontalFeaturesAndButton.js";
+import TwoColHorizontalWithButtonFeatures from "components/features/AboutPagePart1.js";
 import WithStepsAndImageFeatures from "components/features/TwoColWithSteps.js";
 import ThreeColumnDashedBorderFeatures from "components/features/DashedBorderSixFeatures";
 import ThreeColCenteredStatsWithPrimaryBackgroundFeatures from "components/features/ThreeColCenteredStatsPrimaryBackground.js";
@@ -66,7 +66,7 @@ import SliderCards from "components/cards/ThreeColSlider.js";
 import TrendingCards from "components/cards/TwoTrendingPreviewCardsWithImage.js";
 import PortfolioCards from "components/cards/PortfolioTwoCardsWithImage.js";
 import TabGridCards from "components/cards/TabCardGrid.js";
-import ProfileThreeColGridCards from "components/cards/ProfileThreeColGrid.js"
+import ProfileThreeColGridCards from "components/cards/TeamCard.js"
 import ThreeColContactDetailsCards from "components/cards/ThreeColContactDetails.js"
 
 import ThreeColSimpleWithImageBlog from "components/blogs/ThreeColSimpleWithImage.js";
@@ -80,7 +80,7 @@ import TwoColumnWithImageAndRatingTestimonial from "components/testimonials/TwoC
 import ThreeColumnWithProfileImageTestimonial from "components/testimonials/ThreeColumnWithProfileImage.js";
 import SimplePrimaryBackgroundTestimonial from "components/testimonials/SimplePrimaryBackground.js";
 
-import SimpleWithSideImageFAQS from "components/faqs/SimpleWithSideImage.js";
+import SimpleWithSideImageFAQS from "components/faqs/Questions.js";
 import SingleColFAQS from "components/faqs/SingleCol.js";
 import TwoColumnPrimaryBackgroundFAQS from "components/faqs/TwoColumnPrimaryBackground.js";
 

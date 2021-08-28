@@ -6,7 +6,7 @@ import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 
 import Hero from "components/hero/TwoColumnWithFeaturesAndTestimonial.js";
 import Features from "components/features/ThreeColWithSideImage.js";
-import MainFeature from "components/features/TwoColWithTwoHorizontalFeaturesAndButton.js";
+import MainFeature from "components/features/AboutPagePart1.js";
 import FeatureStats from "components/features/ThreeColCenteredStatsPrimaryBackground.js";
 import Pricing from "components/pricing/TwoPlansWithDurationSwitcher.js";
 import Blog from "components/blogs/GridWithFeaturedPost.js";

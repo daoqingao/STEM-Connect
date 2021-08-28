@@ -41,76 +41,71 @@ const CardLinks = styled.div`
 `
 
 export default ({
-  heading = "Meet These Fine Folks.",
+  heading = "Who We Are",
   subheading = "Our Team",
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  description = "",
   cards = [
     {
-      imageSrc: "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
-      position: "Founder",
-      name: "Adam Cuppy",
+      imageSrc: "https://i.imgur.com/hvYoAR6.png",
+      position: "Frontend/Backend",
+      name: "Taylor Ngo",
       links: [
         {
-          url: "https://twitter.com",
-          icon: TwitterIcon,
-        },
-        {
-          url: "https://linkedin.com",
+          url: "https://www.linkedin.com/in/taylor-ngo/",
           icon: LinkedinIcon,
         },
         {
-          url: "https://github.com",
+          url: "https://github.com/tayylorngo",
           icon: GithubIcon,
         },
       ],
+      description: "Stony Brook University",
+      description2: "Computer Science, B.S.",
+      description3: "Applied Mathematics & Statistics, B.S.",
+      description4: "Class of 2023"
     },
     {
       imageSrc: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
-      position: "Sr. Designer",
-      name: "Charlotte Hale",
+      position: "Backend",
+      name: "Daoqin Gao",
       links: [
         {
-          url: "https://twitter.com",
-          icon: TwitterIcon,
-        },
-        {
-          url: "https://linkedin.com",
+          url: "https://www.linkedin.com/in/daoqin-gao/",
           icon: LinkedinIcon,
         },
         {
-          url: "https://github.com",
+          url: "https://github.com/daoqingao",
           icon: GithubIcon,
         },
       ],
+      description: "Stony Brook University",
+      description2: "Computer Science, B.S.",
+      description4: "Class of 2023"
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1517070208541-6ddc4d3efbcb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
-      position: "Jr. Designer",
-      name: "Silvester Wize",
+      imageSrc: "",
+      position: "Backend",
+      name: "Michael Chan",
       links: [
-        {
-          url: "https://twitter.com",
-          icon: TwitterIcon,
-        },
         {
           url: "https://linkedin.com",
           icon: LinkedinIcon,
         },
         {
-          url: "https://github.com",
+          url: "https://github.com/mchan10",
           icon: GithubIcon,
         },
       ],
+      description: "Stony Brook University",
+      description2: "Computer Science, B.S.",
+      description3: "Applied Mathematics & Statistics, B.S.",
+      description4: "Class of 2023"
     },
     {
       imageSrc: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=2.95&w=512&h=512&q=80",
-      position: "Lead Developer",
-      name: "Himali Turn",
+      position: "Frontend/Research",
+      name: "Jeffrey Liew",
       links: [
-        {
-          url: "https://twitter.com",
-          icon: TwitterIcon,
-        },
         {
           url: "https://linkedin.com",
           icon: LinkedinIcon,
@@ -120,45 +115,10 @@ export default ({
           icon: GithubIcon,
         },
       ],
-    },
-    {
-      imageSrc: "https://images.unsplash.com/photo-1546820389-44d77e1f3b31?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
-      position: "Sr. Developer",
-      name: "Troye Sivan",
-      links: [
-        {
-          url: "https://twitter.com",
-          icon: TwitterIcon,
-        },
-        {
-          url: "https://linkedin.com",
-          icon: LinkedinIcon,
-        },
-        {
-          url: "https://github.com",
-          icon: GithubIcon,
-        },
-      ],
-    },
-    {
-      imageSrc: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&fit=facearea&facepad=3.45&w=512&h=512&q=80",
-      position: "Quality Assurance",
-      name: "Holo Wo",
-      links: [
-        {
-          url: "https://twitter.com",
-          icon: TwitterIcon,
-        },
-        {
-          url: "https://linkedin.com",
-          icon: LinkedinIcon,
-        },
-        {
-          url: "https://github.com",
-          icon: GithubIcon,
-        },
-      ],
-    },
+      description: "Stony Brook University",
+      description2: "Information Systems, B.S.",
+      description3: "Class of 2023"
+    }
   ]
 }) => {
   return (
@@ -172,10 +132,22 @@ export default ({
         <Cards>
           {cards.map((card, index) => (
             <Card key={index}>
-              <CardImage imageSrc={card.imageSrc} />
+              {/*<CardImage imageSrc={card.imageSrc} />*/}
               <CardContent>
                 <span className="position">{card.position}</span>
-                <span className="name">{card.name}</span>
+                <span className="name" style={{marginBottom: "10px"}}>{card.name}</span>
+                <p className="description">
+                  {card.description}
+                </p>
+                <p className="description">
+                  {"" || card.description2}
+                </p>
+                <p className="description">
+                  {"" || card.description3}
+                </p>
+                <p className="description">
+                  {"" || card.description4}
+                </p>
                 <CardLinks>
                   {card.links.map((link, linkIndex) => (
                     <a key={linkIndex} className="link" href={link.url}>

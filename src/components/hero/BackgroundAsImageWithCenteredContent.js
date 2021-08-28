@@ -41,18 +41,18 @@ export default () => {
       <NavLink href="/">
         Home
       </NavLink>
-      <NavLink href="#">
+      <NavLink href="/about">
         About
       </NavLink>
-      <NavLink href="#">
+      <NavLink href="/programs">
         Programs
       </NavLink>
-      <NavLink href="#">
+      <NavLink href="/contact">
         Contact
       </NavLink>
     </NavLinks>,
     <NavLinks key={2}>
-      <PrimaryLink href="/#">
+      <PrimaryLink href="/login">
         Login
       </PrimaryLink>
     </NavLinks>

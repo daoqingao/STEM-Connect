@@ -4,8 +4,8 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Hero from "components/hero/TwoColumnWithInput.js";
 import Features from "components/features/ThreeColWithSideImage.js";
-import MainFeature from "components/features/TwoColWithButton.js";
-import MainFeature2 from "components/features/TwoColWithTwoHorizontalFeaturesAndButton.js";
+import MainFeature from "components/features/WhoWeAre.js";
+import MainFeature2 from "components/features/AboutPagePart1.js";
 import FeatureWithSteps from "components/features/TwoColWithSteps.js";
 import Pricing from "components/pricing/ThreePlans.js";
 import Testimonial from "components/testimonials/TwoColumnWithImageAndRating.js";

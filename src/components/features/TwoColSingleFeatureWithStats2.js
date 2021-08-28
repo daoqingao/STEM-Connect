@@ -46,9 +46,11 @@ export default ({
       We have been doing this <wbr /> since <span tw="text-primary-500">1999.</span>
     </>
   ),
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  description = "Educators now have a platform to promote their services to students across the world. " +
+  "Whether you are a small tutor or a university, you can promote your programs on STEM Connect. If you are a student, " +
+  "you now have access to a variety of programs where you can sharpen your skills in STEM fields.",
   primaryButtonText = "Learn More",
-  primaryButtonUrl = "https://timerse.com",
+  primaryButtonUrl = "/programs",
   imageSrc = StatsIllustrationSrc,
   imageCss = null,
   imageContainerCss = null,
@@ -89,14 +91,14 @@ export default ({
             {subheading && <Subheading>{subheading}</Subheading>}
             <Heading>{heading}</Heading>
             <Description>{description}</Description>
-            <Statistics>
-              {statistics.map((statistic, index) => (
-                <Statistic key={index}>
-                  <Value>{statistic.value}</Value>
-                  <Key>{statistic.key}</Key>
-                </Statistic>
-              ))}
-            </Statistics>
+            {/*<Statistics>*/}
+            {/*  {statistics.map((statistic, index) => (*/}
+            {/*    <Statistic key={index}>*/}
+            {/*      <Value>{statistic.value}</Value>*/}
+            {/*      <Key>{statistic.key}</Key>*/}
+            {/*    </Statistic>*/}
+            {/*  ))}*/}
+            {/*</Statistics>*/}
             <PrimaryButton as="a" href={primaryButtonUrl}>
               {primaryButtonText}
             </PrimaryButton>
