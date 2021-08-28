@@ -67,7 +67,7 @@ import TrendingCards from "components/cards/TwoTrendingPreviewCardsWithImage.js"
 import PortfolioCards from "components/cards/PortfolioTwoCardsWithImage.js";
 import TabGridCards from "components/cards/TabCardGrid.js";
 import ProfileThreeColGridCards from "components/cards/TeamCard.js"
-import ThreeColContactDetailsCards from "components/cards/ThreeColContactDetails.js"
+import ThreeColContactDetailsCards from "components/cards/ContactTeamDetails.js"
 
 import ThreeColSimpleWithImageBlog from "components/blogs/ThreeColSimpleWithImage.js";
 import ThreeColSimpleWithImageAndDashedBorderBlog from "components/blogs/ThreeColSimpleWithImageAndDashedBorder.js";
@@ -87,7 +87,7 @@ import TwoColumnPrimaryBackgroundFAQS from "components/faqs/TwoColumnPrimaryBack
 import SimpleContactUsForm from "components/forms/SimpleContactUs.js";
 import SimpleSubscribeNewsletterForm from "components/forms/SimpleSubscribeNewsletter.js";
 import TwoColContactUsForm from "components/forms/TwoColContactUsWithIllustration.js";
-import TwoColContactUsFullForm from "components/forms/TwoColContactUsWithIllustrationFullForm.js";
+import TwoColContactUsFullForm from "components/forms/ContactUsForm.js";
 
 import GetStartedCTA from "components/cta/GetStarted.js";
 import GetStartedLightCTA from "components/cta/GetStartedLight.js";

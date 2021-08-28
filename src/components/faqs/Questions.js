@@ -67,18 +67,18 @@ export default ({
           "on the page. You are now ready to get learning!"
     },
     {
-      question: "What is the inspiration behind STEM Connect ?",
+      question: "How is this different from other platforms?",
       answer:
-        "As former teaching assistants and computer science instructors, we've noticed that a lot of individual tutors and small businesses " +
-          "in education aren't getting the amount of outreach that they should be getting. Some amazing programs are simply not heard of and " +
-          "many students are missing out on the opportunity to learn. We wanted to create a platform to help promote these small programs which " +
-          "will in turn help add more to the STEM field and help support small businesses in education."
+          "Other platforms that educators can promote their services are not really focused on education or STEM. " +
+          "Educators can use social media, newspaper ads, university marketing, but none of these forms are " +
+          "targeted towards education specifically. STEM Connect aims to primarily focus on STEM education which allows " +
+          "both students and educators to know what to expect."
     },
     {
-      question: "Waffle Hacks ?",
+      question: "What was STEM Connect created for ?",
       answer:
-        "STEM Connect was built as a project for the Waffle Hacks Hackathon. You can find more at: https://wafflehacks.tech/"
-    }
+        "STEM Connect was built as a project for the Waffle Hacks Hackathon. Find out more at: https://wafflehacks.tech/"
+    },
   ];
 
   if (!faqs || faqs.length === 0) faqs = defaultFaqs;
