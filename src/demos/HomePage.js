@@ -1,6 +1,6 @@
 import React from "react";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
-import Hero from "components/hero/BackgroundAsImageWithCenteredContent.js";
+import Hero from "components/hero/HomePageHeader.js";
 import Features from "components/features/WhoWeAre.js";
 import Features2 from "components/features/HomePageValues";
 import SliderCard from "components/cards/ThreeColSlider.js";

@@ -30,7 +30,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 // import Hero from "components/hero/TwoColumnWithPrimaryBackground.js";
 // import Hero from "components/hero/FullWidthWithImage.js";
 // import Hero from "components/hero/BackgroundAsImage.js";
-// import Hero from "components/hero/BackgroundAsImageWithCenteredContent.js";
+// import Hero from "components/hero/HomePageHeader.js";
 
 // import Features from "components/features/ThreeColSimple.js";
 // import Features from "components/features/ThreeColWithSideImage.js";
@@ -108,6 +108,8 @@ import ThankYouPage from "ThankYouPage.js";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -122,6 +124,12 @@ export default function App() {
         </Route>
         <Route path="/components/:type/:name">
           <ComponentRenderer />
+        </Route>
+        <Route path="/register">
+          <Signup/>
+        </Route>
+        <Route path="/login">
+          <Login/>
         </Route>
         <Route path="/contact">
           <ContactUs/>

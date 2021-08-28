@@ -56,7 +56,7 @@ const IllustrationImage = styled.div`
 export default ({
   logoLinkUrl = "#",
   illustrationImageSrc = illustration,
-  headingText = "Sign In To Treact",
+  headingText = "Sign In To STEM Connect",
   socialButtons = [
     {
       iconImageSrc: googleIconImageSrc,
@@ -71,33 +71,33 @@ export default ({
   ],
   submitButtonText = "Sign In",
   SubmitButtonIcon = LoginIcon,
-  forgotPasswordUrl = "#",
-  signupUrl = "#",
+  forgotPasswordUrl = "/contact",
+  signupUrl = "/register",
 
 }) => (
   <AnimationRevealPage>
     <Container>
       <Content>
         <MainContainer>
-          <LogoLink href={logoLinkUrl}>
-            <LogoImage src={logo} />
-          </LogoLink>
+          {/*<LogoLink href={logoLinkUrl}>*/}
+          {/*  <LogoImage src={logo} />*/}
+          {/*</LogoLink>*/}
           <MainContent>
             <Heading>{headingText}</Heading>
             <FormContainer>
-              <SocialButtonsContainer>
-                {socialButtons.map((socialButton, index) => (
-                  <SocialButton key={index} href={socialButton.url}>
-                    <span className="iconContainer">
-                      <img src={socialButton.iconImageSrc} className="icon" alt=""/>
-                    </span>
-                    <span className="text">{socialButton.text}</span>
-                  </SocialButton>
-                ))}
-              </SocialButtonsContainer>
-              <DividerTextContainer>
-                <DividerText>Or Sign in with your e-mail</DividerText>
-              </DividerTextContainer>
+              {/*<SocialButtonsContainer>*/}
+              {/*  {socialButtons.map((socialButton, index) => (*/}
+              {/*    <SocialButton key={index} href={socialButton.url}>*/}
+              {/*      <span className="iconContainer">*/}
+              {/*        <img src={socialButton.iconImageSrc} className="icon" alt=""/>*/}
+              {/*      </span>*/}
+              {/*      <span className="text">{socialButton.text}</span>*/}
+              {/*    </SocialButton>*/}
+              {/*  ))}*/}
+              {/*</SocialButtonsContainer>*/}
+              {/*<DividerTextContainer>*/}
+              {/*  <DividerText>Or Sign in with your e-mail</DividerText>*/}
+              {/*</DividerTextContainer>*/}
               <Form>
                 <Input type="email" placeholder="Email" />
                 <Input type="password" placeholder="Password" />

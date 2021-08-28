@@ -56,7 +56,7 @@ const IllustrationImage = styled.div`
 export default ({
   logoLinkUrl = "#",
   illustrationImageSrc = illustration,
-  headingText = "Sign Up For Treact",
+  headingText = "Sign Up For STEM Connect",
   socialButtons = [
     {
       iconImageSrc: googleIconImageSrc,
@@ -71,33 +71,33 @@ export default ({
   ],
   submitButtonText = "Sign Up",
   SubmitButtonIcon = SignUpIcon,
-  tosUrl = "#",
-  privacyPolicyUrl = "#",
-  signInUrl = "#"
+  tosUrl = "/home",
+  privacyPolicyUrl = "/home",
+  signInUrl = "/login"
 }) => (
   <AnimationRevealPage>
     <Container>
       <Content>
         <MainContainer>
-          <LogoLink href={logoLinkUrl}>
-            <LogoImage src={logo} />
-          </LogoLink>
+          {/*<LogoLink href={logoLinkUrl}>*/}
+          {/*  <LogoImage src={logo} />*/}
+          {/*</LogoLink>*/}
           <MainContent>
             <Heading>{headingText}</Heading>
             <FormContainer>
-              <SocialButtonsContainer>
-                {socialButtons.map((socialButton, index) => (
-                  <SocialButton key={index} href={socialButton.url}>
-                    <span className="iconContainer">
-                      <img src={socialButton.iconImageSrc} className="icon" alt="" />
-                    </span>
-                    <span className="text">{socialButton.text}</span>
-                  </SocialButton>
-                ))}
-              </SocialButtonsContainer>
-              <DividerTextContainer>
-                <DividerText>Or Sign up with your e-mail</DividerText>
-              </DividerTextContainer>
+              {/*<SocialButtonsContainer>*/}
+              {/*  {socialButtons.map((socialButton, index) => (*/}
+              {/*    <SocialButton key={index} href={socialButton.url}>*/}
+              {/*      <span className="iconContainer">*/}
+              {/*        <img src={socialButton.iconImageSrc} className="icon" alt="" />*/}
+              {/*      </span>*/}
+              {/*      <span className="text">{socialButton.text}</span>*/}
+              {/*    </SocialButton>*/}
+              {/*  ))}*/}
+              {/*</SocialButtonsContainer>*/}
+              {/*<DividerTextContainer>*/}
+              {/*  <DividerText>Or Sign up with your e-mail</DividerText>*/}
+              {/*</DividerTextContainer>*/}
               <Form>
                 <Input type="email" placeholder="Email" />
                 <Input type="password" placeholder="Password" />
@@ -106,7 +106,7 @@ export default ({
                   <span className="text">{submitButtonText}</span>
                 </SubmitButton>
                 <p tw="mt-6 text-xs text-gray-600 text-center">
-                  I agree to abide by treact's{" "}
+                  I agree to abide by STEM Connect's{" "}
                   <a href={tosUrl} tw="border-b border-gray-500 border-dotted">
                     Terms of Service
                   </a>{" "}

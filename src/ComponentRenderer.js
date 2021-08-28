@@ -42,7 +42,7 @@ import IllustrationAndVideoHero from "components/hero/TwoColumnWithVideo.js";
 import IllustrationAndInputHero from "components/hero/TwoColumnWithInput.js";
 import FeaturesAndTestimonialHero from "components/hero/TwoColumnWithFeaturesAndTestimonial.js";
 import FullWidthWithImageHero from "components/hero/FullWidthWithImage.js";
-import BackgroundAsImageWithCenteredContentHero from "components/hero/BackgroundAsImageWithCenteredContent.js";
+import BackgroundAsImageWithCenteredContentHero from "components/hero/HomePageHeader.js";
 import IllustrationAndPrimaryBackgroundHero from "components/hero/TwoColumnWithPrimaryBackground.js";
 
 import TwoPlansWithDurationSwitcherPricing from "components/pricing/TwoPlansWithDurationSwitcher.js";

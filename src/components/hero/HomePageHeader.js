@@ -52,6 +52,9 @@ export default () => {
       </NavLink>
     </NavLinks>,
     <NavLinks key={2}>
+      <PrimaryLink href="/register">
+        Sign Up
+      </PrimaryLink>
       <PrimaryLink href="/login">
         Login
       </PrimaryLink>
