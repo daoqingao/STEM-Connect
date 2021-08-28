@@ -72,7 +72,7 @@ export default () => {
               <br />
             The hub that brings together students and educators.
           </Heading>
-          <PrimaryAction>View Programs</PrimaryAction>
+          <PrimaryAction><a href="/programs">View Programs</a></PrimaryAction>
         </Content>
       </HeroContainer>
     </Container>

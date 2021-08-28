@@ -52,7 +52,7 @@ export default ({
   " We believe that STEM Connect can help promote small businesses in education, bring more diversity to STEM fields, and connect more educators with students " +
   "across the globe.",
   primaryButtonText = "Learn More",
-  primaryButtonUrl = "https://timerse.com",
+  primaryButtonUrl = "/about",
   imageSrc = TeamIllustrationSrc,
   buttonRounded = true,
   imageRounded = true,
