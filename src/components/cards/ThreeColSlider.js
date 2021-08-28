@@ -91,35 +91,39 @@ export default () => {
   /* Change this according to your needs */
   const cards = [
     {
-      imageSrc: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
-      title: "Wyatt Residency",
-      description: "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
-      locationText: "Rome, Italy",
-      pricingText: "USD 39/Day",
+      imageSrc: "https://images.unsplash.com/photo-1593720213428-28a5b9e94613?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+      title: "Web Development Bootcamp",
+      description: "Learn all the basics of web development in two months. This program will cover all the basics of HTML, CSS, and JavaScript " +
+          "including frameworks such as React.js.",
+      locationText: "Remote",
+      pricingText: "USD 50",
       rating: "4.8",
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
-      title: "Soho Paradise",
-      description: "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
-      locationText: "Ibiza, Spain",
-      pricingText: "USD 50/Day",
+      imageSrc: "https://images.unsplash.com/photo-1542327821-87a5f0fb3c9f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+      title: "Java Tutoring - Jason Mo",
+      description: "Need to learn Java for your computer science class? Want to be a Java developer? Look no further and learn all the basics " +
+          "of Java right here! My tutoring will cover all the basics of Java from creating variables to objects and in the end, you will be able to make your own projects!",
+      locationText: "New York, New York",
+      pricingText: "USD 20/Hour",
       rating: 4.9,
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1549294413-26f195200c16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
-      title: "Hotel Baja",
-      description: "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
-      locationText: "Palo Alto, CA",
-      pricingText: "USD 19/Day",
+      imageSrc: "https://images.unsplash.com/photo-1610812387871-806d3db9f5aa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1538&q=80",
+      title: "Raspberry Pi Basics",
+      description: "Learn the basics of the Raspberry Pi in just 3 weeks! At the end you will be able to create your very own projects such as " +
+          "a home alarm system, step tracker, and even more!",
+      locationText: "Los Angeles, CA",
+      pricingText: "USD 25/Hour",
       rating: "5.0",
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1571770095004-6b61b1cf308a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
-      title: "Hudak Homes",
-      description: "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
-      locationText: "Arizona, RAK",
-      pricingText: "USD 99/Day",
+      imageSrc: "https://images.unsplash.com/photo-1594949633321-0aceb65d1b85?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
+      title: "Calculus I and II Tutoring - Justin Zhu",
+      description: "Hi, my name is Justin and I am a certified Calculus I and II tutor. I have been teaching Calculus for over 10 years and would love " +
+          "to help you learn calculus. Whether it be for your college classes, or for your own personal goals, I can surely help you understand the ins and outs of Calculus.",
+      locationText: "Austin, TX",
+      pricingText: "USD 30/Hour",
       rating: 4.5,
     },
   ]
@@ -128,7 +132,7 @@ export default () => {
     <Container>
       <Content>
         <HeadingWithControl>
-          <Heading>Popular Hotels</Heading>
+          <Heading>Popular Programs</Heading>
           <Controls>
             <PrevButton onClick={sliderRef?.slickPrev}><ChevronLeftIcon/></PrevButton>
             <NextButton onClick={sliderRef?.slickNext}><ChevronRightIcon/></NextButton>
@@ -162,7 +166,7 @@ export default () => {
                 </SecondaryInfoContainer>
                 <Description>{card.description}</Description>
               </TextInfo>
-              <PrimaryButton>Book Now</PrimaryButton>
+              <PrimaryButton>Register</PrimaryButton>
             </Card>
           ))}
         </CardSlider>

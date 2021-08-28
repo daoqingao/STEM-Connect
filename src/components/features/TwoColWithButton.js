@@ -41,13 +41,16 @@ const PrimaryButton = styled(PrimaryButtonBase)(props => [
 
 
 export default ({
-  subheading = "Our Expertise",
+  subheading = "Who We Are",
   heading = (
     <>
-      Designed & Developed by <span tw="text-primary-500">Professionals.</span>
+      Developed by <span tw="text-primary-500">Educators & Students.</span>
     </>
   ),
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  description = "STEM Connect was developed by a group of students studying Computer Science at Stony Brook University. Having all been " +
+  "part of the education and technology industry, we sought to create a platform where educators can promote their services to students across the world." +
+  " We believe that STEM Connect can help promote small businesses in education, bring more diversity to STEM fields, and connect more educators with students " +
+  "across the globe.",
   primaryButtonText = "Learn More",
   primaryButtonUrl = "https://timerse.com",
   imageSrc = TeamIllustrationSrc,

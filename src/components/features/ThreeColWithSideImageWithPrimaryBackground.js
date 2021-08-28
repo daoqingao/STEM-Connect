@@ -54,9 +54,9 @@ const Card = styled.div`
 
 export default ({
   cards = null,
-  heading = "Amazing Features",
+  heading = "Our Values",
   subheading = "",
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+  description = "What we want to achieve with STEM Connect."
 }) => {
   /*
    * This componets has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component) or you can directly pass this using the cards prop:
@@ -68,15 +68,20 @@ export default ({
 
   const defaultCards = [
     {
-      imageSrc: ShieldIconImage,
-      title: "Secure",
-      description: "We strictly only deal with vendors that provide top notch security infrastructure."
+      imageSrc: SimpleIconImage,
+      title: "Promoting Small Business in Education",
+      description: "STEM Connect is a platform where small businesses in education can promote their own services. This includes " +
+          "individual tutors, the local prep center down your block, and even small programs held by universities and schools. No matter " +
+          "the size of one's program, we want to give everyone a chance to promote their educational resources."
     },
-    { imageSrc: SupportIconImage, title: "24/7 Support" },
-    { imageSrc: CustomizeIconImage, title: "Customizable" },
-    { imageSrc: ReliableIconImage, title: "Reliable" },
-    { imageSrc: FastIconImage, title: "Fast" },
-    { imageSrc: SimpleIconImage, title: "Easy" }
+    { imageSrc: SupportIconImage, title: "Connecting Students & Educators", description: "During the COVID-19 pandemic many countries instituted " +
+          " lockdowns including orders to stay at home to slow the rapid spread of the virus. These measures have disrupted the normal functioning " +
+          "of education which necessitated the delivery of alternative methods for schools to provide education. STEM Connect is a platform " +
+          "where educators can provide education to students regardless of where they are in the world." },
+    { imageSrc: CustomizeIconImage, title: "Diversity", description: "We believe that providing more resources will allow more diversity in the STEM field. " +
+          " STEM Connect is a place where everyone (including minorities) can access resources from a diverse group of educators. " +
+          " We want our platform to serve as another place where students can get more resources in STEM fields which will in turn help" +
+          " bring more diverse groups into STEM. We aim to help mitigate the gender gap in STEM and create a more diverse field."}
   ];
 
   if (!cards) cards = defaultCards;

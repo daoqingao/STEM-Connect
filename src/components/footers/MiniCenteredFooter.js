@@ -35,29 +35,16 @@ export default () => {
       <Content>
         <Row>
           <LogoContainer>
-            <LogoImg src={logo} />
-            <LogoText>Treact</LogoText>
+            <LogoText>STEM Connect</LogoText>
           </LogoContainer>
           <LinksContainer>
-            <Link href="#">Home</Link>
+            <Link href="/">Home</Link>
             <Link href="#">About</Link>
-            <Link href="#">Contact Us</Link>
-            <Link href="#">Blog</Link>
-            <Link href="#">Reviews</Link>
+            <Link href="#">Programs</Link>
+            <Link href="#">Contact</Link>
           </LinksContainer>
-          <SocialLinksContainer>
-            <SocialLink href="https://facebook.com">
-              <FacebookIcon />
-            </SocialLink>
-            <SocialLink href="https://twitter.com">
-              <TwitterIcon />
-            </SocialLink>
-            <SocialLink href="https://youtube.com">
-              <YoutubeIcon />
-            </SocialLink>
-          </SocialLinksContainer>
           <CopyrightText>
-            &copy; Copyright 2020, Treact Inc. All Rights Reserved.
+            &copy; Copyright 2021, STEM Connect Inc. All Rights Reserved.
           </CopyrightText>
         </Row>
       </Content>
