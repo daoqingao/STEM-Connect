@@ -98,6 +98,7 @@ import ContactUs from "./pages/ContactUs";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import BlogIndex from "./pages/ProgramsList";
+import CreateProgram from "./pages/CreateProgram";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -112,6 +113,9 @@ export default function App() {
         </Route>
         <Route path="/components/:type/:name">
           <ComponentRenderer />
+        </Route>
+        <Route path="/programs/create">
+          <CreateProgram/>
         </Route>
         <Route path="/programs/:id">
             <ProgramPage/>
