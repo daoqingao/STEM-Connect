@@ -10,7 +10,7 @@ const programSchema = new Schema(
 			type: String,
 			required: true
 		},
-		ocompantwner: {
+		company: {
 			type: String,
 			required: true
 		},
