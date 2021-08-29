@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 app.use(cors());
+app.use(express.json());
 const port = 5000;
 const mongoose = require('mongoose');
 const MONGO_URI = "mongodb+srv://stemconnect:abcdtest@cluster0.f8os5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
@@ -15,7 +16,7 @@ app.get("/", async (req, res) => {
 })
 app.post("/", (req, res) => {
     const id = new ObjectId();
-    const params = req.query
+    const params = req.body
     const prog = new Program({
         _id: id,
         title: params.title,
@@ -28,7 +29,7 @@ app.post("/", (req, res) => {
     })
     const update = prog.save();
     console.log(prog);
-    console.log(req.query)
+    console.log(req.query);
     res.send("hi");
 })
 mongoose.connect(MONGO_URI, {useNewUrlParser: true , useUnifiedTopology: true})
