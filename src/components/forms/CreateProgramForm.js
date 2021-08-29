@@ -4,6 +4,7 @@ import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
+import axios from "axios";
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24`;
@@ -42,13 +43,27 @@ let description = "";
 
 const submitProgram = (e) => {
   e.preventDefault();
-  console.log(name);
-  console.log(title);
-  console.log(price);
-  console.log(imgURL);
-  console.log(email);
-  console.log(phone);
-  console.log(description);
+  const program = {
+      title: title,
+      company: name,
+      price: price,
+      URL: imgURL,
+      email: email,
+      phone: phone,
+      description: description
+  }
+  axios.post("http://localhost:5000/", program).then(response => {
+    console.log(response)
+  }).catch(error => {
+    console.log(error);
+  });
+  // console.log(name);
+  // console.log(title);
+  // console.log(price);
+  // console.log(imgURL);
+  // console.log(email);
+  // console.log(phone);
+  // console.log(description);
 }
 
 const changeName = (e) => {
