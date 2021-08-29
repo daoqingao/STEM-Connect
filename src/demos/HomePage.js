@@ -3,8 +3,8 @@ import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Hero from "components/hero/HomePageHeader.js";
 import Features from "components/features/WhoWeAre.js";
 import Features2 from "components/features/HomePageValues";
-import SliderCard from "components/cards/ThreeColSlider.js";
-import Footer from "components/footers/MiniCenteredFooter.js";
+import SliderCard from "components/cards/FeaturedProgramsSlider.js";
+import Footer from "components/footers/MainFooter.js";
 
 export default () => (
   <AnimationRevealPage>

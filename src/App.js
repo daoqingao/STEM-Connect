@@ -24,7 +24,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
  * separately
  */
 
-// import Hero from "components/hero/TwoColumnWithVideo.js";
+// import Hero from "components/hero/ProgramPageHeading.js";
 // import Hero from "components/hero/TwoColumnWithInput.js";
 // import Hero from "components/hero/TwoColumnWithFeaturesAndTestimonial.js";
 // import Hero from "components/hero/TwoColumnWithPrimaryBackground.js";
@@ -48,7 +48,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 // import Pricing from "components/pricing/ThreePlansWithHalfPrimaryBackground.js";
 // import Pricing from "components/pricing/TwoPlansWithDurationSwitcher.js";
 
-// import SliderCard from "components/cards/ThreeColSlider.js";
+// import SliderCard from "components/cards/FeaturedProgramsSlider.js";
 // import TrendingCard from "components/cards/TwoTrendingPreviewCardsWithImage.js";
 // import Portfolio from "components/cards/PortfolioTwoCardsWithImage.js";
 // import TabGrid from "components/cards/TabCardGrid.js";
@@ -61,7 +61,6 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 // import Testimonial from "components/testimonials/TwoColumnWithImage.js";
 // import Testimonial from "components/testimonials/TwoColumnWithImageAndProfilePictureReview.js";
 // import Testimonial from "components/testimonials/TwoColumnWithImageAndRating.js";
-// import Testimonial from "components/testimonials/ThreeColumnWithProfileImage.js";
 // import Testimonial from "components/testimonials/SimplePrimaryBackground.js";
 
 // import FAQ from "components/faqs/Questions.js";
@@ -76,18 +75,12 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 // import GetStarted from "components/cta/GetStartedLight.js";
 // import DownloadApp from "components/cta/DownloadApp.js";
 
-// import Footer from "components/footers/SimpleFiveColumn.js";
-// import Footer from "components/footers/FiveColumnWithInputForm.js";
-// import Footer from "components/footers/FiveColumnWithBackground.js";
-// import Footer from "components/footers/FiveColumnDark.js";
-// import Footer from "components/footers/MiniCenteredFooter.js";
-
 /* Ready Made Pages (from demos folder) */
 // import EventLandingPage from "demos/EventLandingPage.js";
 import HomePage from "demos/HomePage.js";
 // import AgencyLandingPage from "demos/AgencyLandingPage.js";
 // import SaaSProductLandingPage from "demos/SaaSProductLandingPage.js";
-// import RestaurantLandingPage from "demos/RestaurantLandingPage.js";
+// import RestaurantLandingPage from "demos/ProgramPage.js";
 // import ServiceLandingPage from "demos/ServiceLandingPage.js";
 // import HostingCloudLandingPage from "demos/HostingCloudLandingPage.js";
 
@@ -96,20 +89,15 @@ import HomePage from "demos/HomePage.js";
 // import SignupPage from "pages/Signup.js";
 // import PricingPage from "pages/Pricing.js";
 import AboutUsPage from "pages/AboutUs.js";
-// import ContactUsPage from "pages/ContactUs.js";
-// import BlogIndexPage from "pages/BlogIndex.js";
-// import TermsOfServicePage from "pages/TermsOfService.js";
-// import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
+import ProgramPage from "demos/ProgramPage.js";
 
 import ComponentRenderer from "ComponentRenderer.js";
-import MainLandingPage from "MainLandingPage.js";
-import ThankYouPage from "ThankYouPage.js";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import BlogIndex from "./pages/BlogIndex";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -124,6 +112,12 @@ export default function App() {
         </Route>
         <Route path="/components/:type/:name">
           <ComponentRenderer />
+        </Route>
+        <Route path="/programs/:id">
+            <ProgramPage/>
+        </Route>
+        <Route path="/programs">
+          <BlogIndex/>
         </Route>
         <Route path="/register">
           <Signup/>

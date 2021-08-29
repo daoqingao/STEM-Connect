@@ -3,7 +3,7 @@ import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import Header from "components/headers/light.js";
-import Footer from "components/footers/MiniCenteredFooter";
+import Footer from "components/footers/MainFooter";
 import ContactUsForm from "components/forms/ContactUsForm.js";
 import ContactDetails from "components/cards/ContactTeamDetails.js";
 
