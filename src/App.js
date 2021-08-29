@@ -97,7 +97,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ContactUs from "./pages/ContactUs";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
-import BlogIndex from "./pages/BlogIndex";
+import BlogIndex from "./pages/ProgramsList";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
