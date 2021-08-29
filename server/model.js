@@ -10,12 +10,12 @@ const programSchema = new Schema(
 			type: String,
 			required: true
 		},
-		ocompantwner: {
+		company: {
 			type: String,
 			required: true
 		},
 		price: {
-			type: Number,
+			type: String,
 			required: true
 		},
 		URL: {
