@@ -9,8 +9,9 @@ const MONGO_URI = "mongodb+srv://stemconnect:abcdtest@cluster0.f8os5.mongodb.net
 const ObjectId = require('mongoose').Types.ObjectId;
 const Program = require('./model');
 
-app.get("/", (req, res) => {
-    res.send("hello world");
+app.get("/", async (req, res) => {
+    const programs = await Program.find();
+    res.send(programs);
 })
 app.post("/", (req, res) => {
     const id = new ObjectId();
@@ -30,9 +31,6 @@ app.post("/", (req, res) => {
     console.log(req.query)
     res.send("hi");
 })
-/*app.listen(port, () => {
-    console.log(`Server ready`);
-})*/
 mongoose.connect(MONGO_URI, {useNewUrlParser: true , useUnifiedTopology: true})
         .then(() => {
             app.listen(port, () => {
