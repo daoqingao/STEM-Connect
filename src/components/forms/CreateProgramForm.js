@@ -32,6 +32,54 @@ const Textarea = styled(Input).attrs({as: "textarea"})`
 
 const SubmitButton = tw(PrimaryButtonBase)`inline-block mt-8`
 
+let name = "";
+let title = "";
+let price = "";
+let imgURL = "";
+let email = "";
+let phone = "";
+let description = "";
+
+const submitProgram = (e) => {
+  e.preventDefault();
+  console.log(name);
+  console.log(title);
+  console.log(price);
+  console.log(imgURL);
+  console.log(email);
+  console.log(phone);
+  console.log(description);
+}
+
+const changeName = (e) => {
+  name = e.target.value;
+}
+
+const changeTitle = (e) => {
+  title = e.target.value;
+}
+
+const changePrice = (e) => {
+  price = e.target.value;
+}
+
+const changeimgURL = (e) => {
+  imgURL = e.target.value;
+}
+
+const changeEmail = (e) => {
+  email = e.target.value;
+}
+
+const changePhone = (e) => {
+  phone = e.target.value;
+}
+
+const changeDescription = (e) => {
+  description = e.target.value;
+}
+
+
 export default ({
   subheading = "Create a Program",
   heading = <>Create & <span tw="text-primary-500">Educate</span><wbr/> with us.</>,
@@ -55,15 +103,14 @@ export default ({
             <Heading>{heading}</Heading>
             {description && <Description>{description}</Description>}
             <Form action={formAction} method={formMethod}>
-              <Input type="text" name="name" placeholder="Title" />
-              <Input type="text" name="subject" placeholder="Company Name" />
-              <Input type="text" name="subject" placeholder="Price (USD)" />
-              <Input type="text" name="subject" placeholder="Cover Image URL" />
-              <Input type="email" name="subject" placeholder="Email Address" />
-              <Input type="tel" name="subject" placeholder="Phone Number" />
-
-              <Textarea name="message" placeholder="Description" />
-              <SubmitButton type="submit">{submitButtonText}</SubmitButton>
+              <Input type="text" name="name" placeholder="Title" onChange={changeName} />
+              <Input type="text" name="subject" placeholder="Company Name" onChange={changeTitle} />
+              <Input type="text" name="subject" placeholder="Price (USD)" onChange={changePrice}/>
+              <Input type="text" name="subject" placeholder="Cover Image URL" onChange={changeimgURL} />
+              <Input type="email" name="subject" placeholder="Email Address" onChange={changeEmail} />
+              <Input type="tel" name="subject" placeholder="Phone Number" onChange={changePhone} />
+              <Textarea name="message" placeholder="Description" onChange={changeDescription}/>
+              <SubmitButton onClick={submitProgram} type="submit">{submitButtonText}</SubmitButton>
             </Form>
           </TextContent>
         </TextColumn>
