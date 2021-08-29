@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
-//const cors = require("cors");
-//app.use(cors);
+const cors = require("cors");
+app.use(cors());
 const port = 5000;
 const mongoose = require('mongoose');
 const MONGO_URI = "mongodb+srv://stemconnect:abcdtest@cluster0.f8os5.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
