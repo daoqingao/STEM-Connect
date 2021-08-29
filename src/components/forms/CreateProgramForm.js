@@ -52,18 +52,14 @@ const submitProgram = (e) => {
       phone: phone,
       description: description
   }
-  axios.post("http://localhost:5000/", program).then(response => {
+  console.log(program);
+  axios.post("http://localhost:5000/", program
+  ).then(response => {
     console.log(response)
   }).catch(error => {
     console.log(error);
   });
-  // console.log(name);
-  // console.log(title);
-  // console.log(price);
-  // console.log(imgURL);
-  // console.log(email);
-  // console.log(phone);
-  // console.log(description);
+  window.location.href = "/programs";
 }
 
 const changeName = (e) => {

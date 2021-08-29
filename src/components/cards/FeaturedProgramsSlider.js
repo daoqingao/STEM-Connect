@@ -100,8 +100,8 @@ export default () => {
       rating: "4.8",
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1542327821-87a5f0fb3c9f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
-      title: "Java Tutoring - Jason Mo",
+      imageSrc: "https://images.unsplash.com/photo-1588239034647-25783cbfcfc1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80",
+      title: "Java Tutoring - Taylor",
       description: "Need to learn Java for your computer science class? Want to be a Java developer? Look no further and learn all the basics " +
           "of Java right here! My tutoring will cover all the basics of Java from creating variables to objects and in the end, you will be able to make your own projects!",
       locationText: "New York, New York",
@@ -118,13 +118,40 @@ export default () => {
       rating: "5.0",
     },
     {
-      imageSrc: "https://images.unsplash.com/photo-1594949633321-0aceb65d1b85?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80",
+      imageSrc: "https://images.unsplash.com/photo-1596495577886-d920f1fb7238?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1654&q=80",
       title: "Calculus I and II Tutoring - Justin Zhu",
       description: "Hi, my name is Justin and I am a certified Calculus I and II tutor. I have been teaching Calculus for over 10 years and would love " +
           "to help you learn calculus. Whether it be for your college classes, or for your own personal goals, I can surely help you understand the ins and outs of Calculus.",
       locationText: "Austin, TX",
       pricingText: "USD 30/Hour",
       rating: 4.5,
+    },
+    {
+      imageSrc: "https://images.unsplash.com/photo-1576834967753-ad2cf1cc8d19?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=998&q=80",
+      title: "Calculus III and IV Tutoring - Justin Zhu",
+      description: "Hi, my name is Justin and I am a certified Calculus III and IV tutor. I have been teaching Calculus for over 10 years and would love " +
+          "to help you learn calculus. Whether it be for your college classes, or for your own personal goals, I can surely help you understand the ins and outs of Calculus.",
+      locationText: "Austin, TX",
+      pricingText: "USD 30/Hour",
+      rating: 4.5,
+    },
+    {
+      imageSrc: "https://images.unsplash.com/photo-1532289735437-a07b8f3240e2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80",
+      title: "App Development Bootcamp - Matt Yeh",
+      description: "Hi, my name is Matt, and I've been making apps since I was 5 years old. I want to help you on your app development journey. " +
+          "After two months of learning, you should be able to create all kinds of apps, from android to IOS.",
+      locationText: "Stony Brook, NY",
+      pricingText: "USD 50/session",
+      rating: 4.6,
+    },
+    {
+      imageSrc: "https://images.unsplash.com/photo-1555864326-5cf22ef123cf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1647&q=80",
+      title: "Learn Tetris - Daoqin Gao",
+      description: "Hi, my name is Daoqin and I'm the Waffle Hacks 2021 Tetris Champion. After we train together, you will become elite at " +
+          "tetris. You will be doing t-spins in no time. What are you waiting for? Register now!",
+      locationText: "Stony Brook, NY",
+      pricingText: "USD 50/hour",
+      rating: 4.9,
     },
   ]
 
@@ -141,7 +168,7 @@ export default () => {
         <CardSlider ref={setSliderRef} {...sliderSettings}>
           {cards.map((card, index) => (
             <Card key={index}>
-              <CardImage imageSrc={card.imageSrc} />
+              <CardImage imageSrc={card.URL} />
               <TextInfo>
                 <TitleReviewContainer>
                   <Title>{card.title}</Title>

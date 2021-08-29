@@ -7,6 +7,7 @@ import { css } from "styled-components/macro";
 import Header from "components/headers/light.js";
 import { SectionHeading } from "components/misc/Headings";
 import { PrimaryButton } from "components/misc/Buttons";
+import axios from 'axios';
 
 const HeadingRow = tw.div`flex`;
 const Heading = tw(SectionHeading)`text-gray-900`;
@@ -47,31 +48,23 @@ const LoadMoreButton = tw(PrimaryButton)`mt-16 mx-auto`;
 
 export default ({
   headingText = "Programs",
-  posts = [
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost(),
-    getPlaceholderPost()
-  ]
+  // posts = [
+  // ]
 }) => {
   const [visible, setVisible] = useState(7);
+  const [programsList, setProgramsList] = useState([]);
+
   const onLoadMoreClick = () => {
     setVisible(v => v + 6);
   };
+  const getPrograms = async () => {
+    await axios.get('http://localhost:5000/').then(response => {
+      setProgramsList(response.data);
+    }).catch(err => {
+      console.log(err);
+    })
+  }
+  getPrograms();
   return (
     <AnimationRevealPage>
       <Header />
@@ -81,14 +74,14 @@ export default ({
             <Heading>{headingText}</Heading>
           </HeadingRow>
           <Posts>
-            {posts.slice(0, visible).map((post, index) => (
+            {programsList.slice(0, visible).map((post, index) => (
               <PostContainer key={index} featured={post.featured}>
                 <Post className="group" as="a" href={post.url}>
-                  <Image imageSrc={post.imageSrc} />
+                  <Image imageSrc={post.URL} />
                   <Info>
-                    <Category>{post.category}</Category>
-                    <CreationDate>{post.date}</CreationDate>
-                    <Title>{post.title}</Title>
+                    <Category>{post.title}</Category>
+                    {/*<CreationDate>{post.email}</CreationDate>*/}
+                    <Title>{post.company}</Title>
                     {post.description && <Description>{post.description}</Description>}
                     <Title>{post.price}</Title>
                   </Info>
@@ -96,7 +89,7 @@ export default ({
               </PostContainer>
             ))}
           </Posts>
-          {visible < posts.length && (
+          {visible < programsList.length && (
             <ButtonContainer>
               <LoadMoreButton onClick={onLoadMoreClick}>Load More</LoadMoreButton>
             </ButtonContainer>
