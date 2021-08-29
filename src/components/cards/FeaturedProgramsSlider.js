@@ -168,7 +168,7 @@ export default () => {
         <CardSlider ref={setSliderRef} {...sliderSettings}>
           {cards.map((card, index) => (
             <Card key={index}>
-              <CardImage imageSrc={card.URL} />
+              <CardImage imageSrc={card.imageSrc} />
               <TextInfo>
                 <TitleReviewContainer>
                   <Title>{card.title}</Title>
