@@ -21,6 +21,20 @@ Some amazing programs are simply not heard of and many students are missing out 
 We wanted to create a platform to help promote these small programs which will in turn help add 
 more to the STEM field and help support small businesses in education.
 
+## How to use (Students)
+If you are a student, you now have access to a variety of resources in the STEM field. Navigate over to the programs page,
+and then you can see all the programs available to you. Click on the ones you would like to register for and follow the steps
+on the page. You are now ready to get learning!
+
+## How to use (Educators)
+If you are an educator, STEM Connect is the place for you to post your amazing services and programs to students. 
+After creating an account and signing in, you can start making posts for your programs. 
+Fill out all the necessary information such as title, cost, description, and etc. and you 
+have just made a post for students to see. Now just sit back and prepare for students to register!
+
+
+
+
 ## Demo
-###Link: https://stemconnect.netlify.app/
+### Link: https://stemconnect.netlify.app/
 
